@@ -3,4 +3,4 @@ select
  order_id,
  feedback_score,
  DATETIME(feedback_form_sent_date, "Europe/Paris") AS feedback_form_sent_at,
-from {{ source('sales_database', 'feedback') }}
+from {{ source('dataset_fil_rouge', 'feedback') }}

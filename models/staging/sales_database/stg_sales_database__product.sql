@@ -6,4 +6,4 @@ select product_id,
  cast(product_weight_g as int) as product_weight_g,
  cast(product_length_cm as int) as product_length_cm,
  cast(product_height_cm as int) as product_height_cm,
-from {{ source('sales_database', 'product') }}
+from {{ source('dataset_fil_rouge', 'product') }}
